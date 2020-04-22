@@ -2,7 +2,7 @@
 
 Add to your Gemfile:
 
-```ruby
+```ruby 
 gem 'has_utoken'
 ```
 
