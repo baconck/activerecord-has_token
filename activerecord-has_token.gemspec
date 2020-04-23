@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Chris Bacon"]
   s.email       = ["chris@crispybacon.io"]
   s.homepage      = "https://github.com/baconck/activerecord-has_token"
-  s.summary       = %q{Create tokens for your activerecord models}
-  s.description   = %q{unique tokens of activerecord models.}
+  s.summary       = %q{Unique token strings for your activerecord models}
+  s.description   = %q{Unique token strings for your activerecord models}
   
   s.license     = "MIT"
 
