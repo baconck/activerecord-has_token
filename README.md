@@ -3,7 +3,7 @@
 Add to your Gemfile:
 
 ```ruby 
-gem 'has_utoken'
+gem 'activerecord-has_token'
 ```
 
 Then you can add `has_token` to your model(s):

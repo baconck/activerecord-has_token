@@ -5,7 +5,7 @@ libdir = File.dirname(File.dirname(__FILE__)) + '/lib'
 $LOAD_PATH.unshift libdir unless $LOAD_PATH.include?(libdir)
 
 require "rubygems"
-require "has_utoken"
+require "has_token"
 require "minitest/autorun"
 require "minitest/unit"
 

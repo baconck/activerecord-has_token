@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class HasUtokenTest < Minitest::Test
+class HasTokenTest < Minitest::Test
   def setup 
     @post = Post.new
   end

@@ -1,16 +1,16 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "has_utoken/version"
+require "has_token/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "has_utoken"
-  s.version     = HasUtoken::VERSION
+  s.name        = "activerecord-has_token"
+  s.version     = HasToken::VERSION
   s.authors     = ["Chris Bacon"]
   s.email       = ["chris@crispybacon.io"]
-  s.homepage      = "https://github.com/baconck/has_utoken"
-  s.summary       = %q{Create tokens for your Ruby on Rails model}
-  s.description   = %q{HasUToken provides unique tokens of any length for any model in ruby on rails.}
+  s.homepage      = "https://github.com/baconck/activerecord-has_token"
+  s.summary       = %q{Create tokens for your activerecord models}
+  s.description   = %q{unique tokens of activerecord models.}
   
   s.license     = "MIT"
 

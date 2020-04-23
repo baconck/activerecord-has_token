@@ -1,12 +1,12 @@
+require 'securerandom'
 require 'active_record'
+
 module ActiveRecord
-  module HasUtoken
+  module HasToken
     extend ActiveSupport::Concern
 
     class_methods do
       def has_token(options = {})
-        require 'active_support/core_ext/securerandom'
-
         attribute = options[:token_attribute] || :token
         length = options[:length] || 6
         
@@ -25,8 +25,7 @@ module ActiveRecord
       def generate_token(attribute, length)
         random_token = nil
         loop do
-          hex_length = (length.to_f/2.0).round
-          random_token = SecureRandom.hex(hex_length)
+          random_token = SecureRandom.alphanumeric(length)
 
           break unless self.where(attribute => random_token).exists?
         end
@@ -36,4 +35,4 @@ module ActiveRecord
   end
 end
 
-ActiveRecord::Base.include(ActiveRecord::HasUtoken)
+ActiveRecord::Base.include(ActiveRecord::HasToken)
