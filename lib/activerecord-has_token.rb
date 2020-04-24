@@ -6,9 +6,6 @@ module ActiveRecord
 
     class_methods do
       def has_token(options = {})
-        
-        require "active_support/core_ext/securerandom" 
-
         attribute = options[:token_attribute] || :token
         length = options[:length] || 6
         

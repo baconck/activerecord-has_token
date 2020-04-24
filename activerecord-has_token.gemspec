@@ -1,11 +1,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "has_token/version"
+require "activerecord-has_token/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "activerecord-has_token"
-  s.version     = HasToken::VERSION
+  s.version     = ActiveRecord::HasToken::VERSION
   s.authors     = ["Chris Bacon"]
   s.email       = ["chris@crispybacon.io"]
   s.homepage      = "https://github.com/baconck/activerecord-has_token"
