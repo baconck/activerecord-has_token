@@ -26,7 +26,6 @@ module ActiveRecord
         random_token = nil
         loop do
           random_token = SecureRandom.alphanumeric(length)
-
           break unless self.where(attribute => random_token).exists?
         end
         random_token
