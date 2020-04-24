@@ -1,4 +1,3 @@
-require 'securerandom'
 require 'active_record'
 
 module ActiveRecord
